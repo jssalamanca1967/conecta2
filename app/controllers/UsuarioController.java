@@ -39,14 +39,14 @@ public class UsuarioController extends Controller {
     public Result show(Long id){
         Usuario usuario = Usuario.find.byId(id);
         if(usuario == null)
-            return ok(views.html.Usuario.show.render(usuario, false));
+            return ok(views.html.Usuario.show.render(usuario));
         else
-            return ok(views.html.Usuario.show.render(usuario, true));
+            return ok(views.html.Usuario.show.render(usuario));
     }
 
     public Result editar(Long id){
         Usuario usuario = Usuario.find.byId(id);
-        return ok(views.html.Usuario.show.render(usuario, true));
+        return ok(views.html.Usuario.show.render(usuario));
     }
 
     public Result crear(){

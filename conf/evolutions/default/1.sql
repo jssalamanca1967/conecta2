@@ -6,6 +6,7 @@
 create table cliente (
   id                        bigint auto_increment not null,
   nit                       varchar(255),
+  nombre                    varchar(255),
   contrasenia               varchar(255),
   constraint pk_cliente primary key (id))
 ;

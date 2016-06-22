@@ -1,8 +1,8 @@
-@(usuario: Usuario, existe: Boolean)
+@(usuario: Usuario)
 
 @main("Conecta2") {
 
-    @if(existe) {
+    @if(usuario != null) {
         <p><b>Nombre: </b>@usuario.nombre</p>
         <p><b>Correo electrónico: </b>@usuario.email</p>
         <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>

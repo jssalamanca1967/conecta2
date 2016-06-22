@@ -20,6 +20,9 @@ public class Cliente extends Model {
     public String nit;
 
     @Constraints.Required
+    public String nombre;
+
+    @Constraints.Required
     public String contrasenia;
 
     @OneToMany
