@@ -1,0 +1,12 @@
+@(usuarios: List[Usuario])
+
+@main("Usuarios") {
+
+  @for(usuario <- usuarios){
+      <p><b>Nombre: </b>@usuario.nombre</p>
+      <p><b>Correo electrónico: </b>@usuario.email</p>
+      <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios</p>
+
+  }
+
+}
