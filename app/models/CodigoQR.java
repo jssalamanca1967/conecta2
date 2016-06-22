@@ -20,11 +20,17 @@ public class CodigoQR extends Model{
     @Column(unique=true)
     public String codigo;
 
+    /**
+     * Capacidad total en MB
+     */
     @Constraints.Required
-    public int capacidadTotal;
+    public double capacidadTotal;
 
+    /**
+     * Capacidad consumida en MB
+     */
     @Constraints.Required
-    public int consumido;
+    public double consumido;
 
     @OneToOne
     public Cliente cliente;

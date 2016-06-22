@@ -3,8 +3,8 @@
 @helper.form(action = routes.UsuarioController.guardarNuevo(), 'id -> "user_registration_form", 'method -> "POST"){
   <fieldset>
     @helper.inputText(
-      form("nombre"),
-      '_label -> "Nombre completo",
+      form("codigo"),
+      '_label -> "Valor del código",
       '_showConstraints -> false
     )
     @helper.inputText(

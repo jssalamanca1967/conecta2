@@ -14,8 +14,8 @@ create table cliente (
 create table codigoqr (
   id                        bigint auto_increment not null,
   codigo                    varchar(255),
-  capacidad_total           integer,
-  consumido                 integer,
+  capacidad_total           double,
+  consumido                 double,
   cliente_id                bigint,
   usuario_id                bigint,
   constraint uq_codigoqr_codigo unique (codigo),
