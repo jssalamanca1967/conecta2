@@ -15,8 +15,8 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET     /usuario/nuevo              controllers.UsuarioController.crear()
 POST    /usuario/guardar            controllers.UsuarioController.guardarNuevo()
-POST    /usuario/guardarEditado     controllers.UsuarioController.guardarEditado()
 GET     /usuarios                   controllers.UsuarioController.darUsuarios()
+POST    /usuario/*id/guardarEditado controllers.UsuarioController.guardarEditado(id: Long)
 POST    /usuario/*id/guardarCodigo  controllers.UsuarioController.guardarCodigo(id: Long)
 GET     /usuario/*id/agregarCodigo  controllers.UsuarioController.redimirCodigo(id: Long)
 GET     /usuario/*id/edit           controllers.UsuarioController.editar(id: Long)

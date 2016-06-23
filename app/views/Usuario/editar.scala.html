@@ -1,6 +1,6 @@
 @(form: Form[Usuario], id: Long)
 @main("Conecta2 Network") {
-  @helper.form(action = routes.UsuarioController.guardarEditado(), 'id -> "user_edir_", 'method -> "POST") {
+  @helper.form(action = routes.UsuarioController.guardarEditado(id), 'id -> "user_edir_", 'method -> "POST") {
     <fieldset>
       @helper.inputText(
         form("nombre"),
@@ -23,7 +23,7 @@
         '_showConstraints -> false
       )
       @helper.select(
-        field = form("selectField"),
+        field = form("sexo"),
         options = Seq("Femenino" -> "Femenino", "Masculino" -> "Masculino"),
         '_label -> "Sexo",
         '_showConstraints -> false

@@ -12,10 +12,10 @@
         <a href=@routes.UsuarioController.editar(usuario.id)>
             <input type="button" value="Editar" />
         </a>
-        @h = 1
+
         <p><b>Códigos</b></p>
         @for(codigo <- usuario.codigos){
-            <p><b>@h </b> @codigo.codigo - @codigo.capacidadTotal MB - @codigo.consumido MB - @codigo.cliente.nombre </p>
+            <p>@codigo.codigo - @codigo.capacidadTotal MB - @codigo.consumido MB - @codigo.cliente.nombre </p>
         }
 
     }else{
