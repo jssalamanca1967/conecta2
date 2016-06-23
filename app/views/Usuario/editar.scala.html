@@ -1,6 +1,6 @@
 @(form: Form[Usuario], id: Long)
 @main("Conecta2 Network") {
-  @helper.form(action = routes.UsuarioController.guardarCodigo(id), 'id -> "user_code_registration", 'method -> "POST") {
+  @helper.form(action = routes.UsuarioController.guardarEditado(), 'id -> "user_edir_", 'method -> "POST") {
     <fieldset>
       @helper.inputText(
         form("nombre"),
