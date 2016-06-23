@@ -15,11 +15,11 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET     /usuario/nuevo              controllers.UsuarioController.crear()
 POST    /usuario/guardar            controllers.UsuarioController.guardarNuevo()
-GET     /usuarios                   controllers.UsuarioController.darUsuarios()
+GET     /usuarios                   controllers.UsuarioController.usuarios()
 POST    /usuario/*id/guardarEditado controllers.UsuarioController.guardarEditado(id: Long)
 POST    /usuario/*id/guardarCodigo  controllers.UsuarioController.guardarCodigo(id: Long)
 GET     /usuario/*id/agregarCodigo  controllers.UsuarioController.redimirCodigo(id: Long)
-GET     /usuario/*id/edit           controllers.UsuarioController.editar(id: Long)
+GET     /usuario/*id/editar         controllers.UsuarioController.editar(id: Long)
 GET     /usuario/*id                controllers.UsuarioController.mostrar(id: Long)
 
 
@@ -27,12 +27,27 @@ GET     /usuario/*id                controllers.UsuarioController.mostrar(id: Lo
 
 GET     /codigo/nuevo              controllers.CodigoQRController.crear()
 POST    /codigo/guardar            controllers.CodigoQRController.guardarNuevo()
-GET     /codigos                   controllers.CodigoQRController.darUsuarios()
-GET     /codigo/*id/edit           controllers.CodigoQRController.editar(id: Long)
+GET     /codigos                   controllers.CodigoQRController.codigos()
 GET     /codigo/*id                controllers.CodigoQRController.mostrar(id: Long)
-
 
 # Cliente
 
+GET     /cliente/nuevo              controllers.ClienteController.crear()
+POST    /cliente/guardar            controllers.ClienteController.guardarNuevo()
+GET     /clientes                   controllers.ClienteController.clientes()
+POST    /cliente/*id/guardarEditado controllers.ClienteController.guardarEditado(id: Long)
+POST    /cliente/*id/guardarCodigo  controllers.ClienteController.guardarCodigo(id: Long)
+GET     /cliente/*id/agregarCodigo  controllers.ClienteController.redimirCodigo(id: Long)
+GET     /cliente/*id/editar         controllers.ClienteController.editar(id: Long)
+GET     /cliente/*id                controllers.ClienteController.mostrar(id: Long)
 
 # Personal
+
+GET     /personal/nuevo              controllers.PersonalController.crear()
+POST    /personal/guardar            controllers.PersonalController.guardarNuevo()
+GET     /personals                   controllers.PersonalController.personals()
+POST    /personal/*id/guardarEditado controllers.PersonalController.guardarEditado(id: Long)
+POST    /personal/*id/guardarCodigo  controllers.PersonalController.guardarCodigo(id: Long)
+GET     /personal/*id/agregarCodigo  controllers.PersonalController.redimirCodigo(id: Long)
+GET     /personal/*id/editar         controllers.PersonalController.editar(id: Long)
+GET     /personal/*id                controllers.PersonalController.mostrar(id: Long)
