@@ -4,40 +4,15 @@
   <fieldset>
     @helper.inputText(
       form("codigo"),
-      '_label -> "Valor del código",
+      '_label -> "Código",
       '_showConstraints -> false
     )
     @helper.inputText(
-      form("email"),
-      '_label -> "Correo electrónico",
+      form("capacidadTotal"),
+      '_label -> "Capacidad total",
       '_showConstraints -> false
     )
-    @helper.inputText(
-      form("confirm_email"),
-      '_label -> "Confirmar correo electrónico",
-      '_showConstraints -> false
-    )
-    @helper.inputPassword(
-      form("contrasenia"),
-      '_label -> "Contraseña",
-      '_showConstraints -> false
-    )
-    @helper.inputPassword(
-      form("confirm_password"),
-      '_label -> "Confirmar contraseña",
-      '_showConstraints -> false
-    )
-    @helper.inputDate(
-      form("cumpleanios"),
-      '_label -> "Fecha de nacimiento",
-      '_showConstraints -> false
-    )
-    @helper.select(
-      field = form("selectField"),
-      options = Seq("Femenino"->"Femenino", "Masculino"->"Masculino"),
-      '_label -> "Sexo",
-      '_showConstraints -> false
-    )
+
   </fieldset>
   <button type="submit">Registrarse</button>
 

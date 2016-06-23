@@ -4,6 +4,7 @@ import models.Usuario;
 import play.*;
 import play.data.Form;
 import play.mvc.*;
+import views.html.index;
 
 import java.util.Date;
 import java.util.List;
@@ -15,20 +16,6 @@ import static play.libs.Json.toJson;
  */
 public class UsuarioController extends Controller {
 
-    public Result prueba(){
-
-        Usuario user = new Usuario();
-
-        user.nombre = "Johnathan";
-        user.email = "js.salamanca1967@uniandes.edu.co";
-        user.contrasenia = "asdf";
-        user.cumpleanios = new Date(94,3,20);
-
-        user.save();
-
-        return ok(views.html.index.render("Usuario creado"));
-    }
-
     public Result darUsuarios(){
 
         List<Usuario> lista = Usuario.find.all();
@@ -36,7 +23,7 @@ public class UsuarioController extends Controller {
 
     }
 
-    public Result show(Long id){
+    public Result mostrar(Long id){
         Usuario usuario = Usuario.find.byId(id);
         if(usuario == null)
             return ok(views.html.Usuario.show.render(usuario));
@@ -46,7 +33,8 @@ public class UsuarioController extends Controller {
 
     public Result editar(Long id){
         Usuario usuario = Usuario.find.byId(id);
-        return ok(views.html.Usuario.show.render(usuario));
+        Form formulario = Form.form(Usuario.class).fill(usuario);
+        return ok(views.html.Usuario.editar.render(formulario, id));
     }
 
     public Result crear(){
@@ -94,6 +82,10 @@ public class UsuarioController extends Controller {
         else{
             return ok(views.html.Usuario.newUser.render(formulario));
         }
+    }
+
+    public Result guardarEditado() {
+        return ok(index.render("Your new application is ready."));
     }
 
 

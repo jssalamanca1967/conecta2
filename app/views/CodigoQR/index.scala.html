@@ -1,0 +1,20 @@
+@(codigos: List[CodigoQR])
+
+@main("Conecta2") {
+
+    @for(codigo <- codigos) {
+        <p><b>Codigo: </b>@codigo.codigo</p>
+        <p><b>Capacidad: </b>@codigo.capacidadTotal</p>
+        <p><b>Consumido: </b>@codigo.consumido</p>
+        <p><b>Cliente a quien pertenece: </b>@if(codigo.cliente != null){
+            @codigo.cliente.nombre
+        }else{
+            Ninguno
+        }</p>
+        <p><b>Usuario a quien pertenece: </b>@if(codigo.usuario != null){
+            @codigo.usuario.email
+        }else{
+            Ninguno
+        }</p>
+    }
+}

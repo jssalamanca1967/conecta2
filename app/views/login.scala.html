@@ -1,0 +1,19 @@
+@(form: DynamicForm)
+
+@main("Conecta2"){
+  @helper.form(action = routes.Application.loginSubmit(), 'id -> "user_registration_form", 'method -> "POST"){
+    <fieldset>
+      @helper.inputText(
+        form("username"),
+        '_label -> "Nombre de usuario o correo electrónico",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("password"),
+        '_label -> "Contraseña",
+        '_showConstraints -> false
+      )
+    </fieldset>
+    <button type="submit">Registrarse</button>
+  }
+}

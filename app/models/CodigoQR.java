@@ -29,7 +29,6 @@ public class CodigoQR extends Model{
     /**
      * Capacidad consumida en MB
      */
-    @Constraints.Required
     public double consumido;
 
     @OneToOne

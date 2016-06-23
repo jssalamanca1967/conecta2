@@ -1,0 +1,49 @@
+@(form: Form[Usuario], id: Long)
+
+@helper.form(action = routes.UsuarioController.guardarEditado(), 'id -> "user_registration_form", 'method -> "POST"){
+  <fieldset>
+    @helper.inputText(
+      form("nombre"),
+      '_label -> "Nombre completo",
+      '_showConstraints -> false
+    )
+    @helper.inputText(
+      form("email"),
+      '_label -> "Correo electrónico",
+      '_showConstraints -> false
+    )
+    @helper.inputText(
+      form("confirm_email"),
+      '_label -> "Confirmar correo electrónico",
+      '_showConstraints -> false
+    )
+    @helper.inputPassword(
+      form("contrasenia"),
+      '_label -> "Contraseña",
+      '_showConstraints -> false
+    )
+    @helper.inputPassword(
+      form("confirm_password"),
+      '_label -> "Confirmar contraseña",
+      '_showConstraints -> false
+    )
+    @helper.inputDate(
+      form("cumpleanios"),
+      '_label -> "Fecha de nacimiento",
+      '_showConstraints -> false
+    )
+    @helper.select(
+      field = form("selectField"),
+      options = Seq("Femenino"->"Femenino", "Masculino"->"Masculino"),
+      '_label -> "Sexo",
+      '_showConstraints -> false
+    )
+  </fieldset>
+  <button type="submit">Guardar</button>
+  <button type="reset">Restauar valores</button>
+  <a href=@routes.UsuarioController.editar(id)>
+    <input type="button" value="Visit Google" />
+  </a>
+
+
+}

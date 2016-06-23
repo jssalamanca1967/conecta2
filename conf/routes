@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET     /login                      controllers.Application.login()
+POST    /loginSubmit                controllers.Application.loginSubmit()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
@@ -11,9 +13,22 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 # Usuario
 
-GET     /usuario/prueba             controllers.UsuarioController.prueba()
 GET     /usuario/nuevo              controllers.UsuarioController.crear()
 POST    /usuario/guardar            controllers.UsuarioController.guardarNuevo()
+POST    /usuario/guardarEditado     controllers.UsuarioController.guardarEditado()
 GET     /usuarios                   controllers.UsuarioController.darUsuarios()
-GET     /usuario/*id                controllers.UsuarioController.show(id: Long)
+GET     /usuario/*id                controllers.UsuarioController.mostrar(id: Long)
 GET     /usuario/*id/edit           controllers.UsuarioController.editar(id: Long)
+
+# Codigo QR
+
+GET     /codigo/nuevo              controllers.CodigoQRController.crear()
+POST    /codigo/guardar            controllers.CodigoQRController.guardarNuevo()
+GET     /codigos                   controllers.CodigoQRController.darUsuarios()
+GET     /codigo/*id                controllers.CodigoQRController.mostrar(id: Long)
+GET     /codigo/*id/edit           controllers.CodigoQRController.editar(id: Long)
+
+# Cliente
+
+
+# Personal
