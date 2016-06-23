@@ -20,7 +20,7 @@ public class UsuarioController extends Controller {
 
 
 
-    public Result darUsuarios(){
+    public Result usuarios(){
 
         List<Usuario> lista = Usuario.find.all();
         return ok(views.html.Usuario.index.render(lista));
@@ -69,8 +69,7 @@ public class UsuarioController extends Controller {
             }
 
             if(formulario.hasErrors()){
-                System.out.println("Erroooores");
-                System.out.println(formulario.errorsAsJson());
+
                 return badRequest(views.html.Usuario.newUser.render(formulario));
             }
             else{

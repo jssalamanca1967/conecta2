@@ -1,6 +1,6 @@
 @(form: Form[CodigoQR])
 
-@helper.form(action = routes.UsuarioController.guardarNuevo(), 'id -> "user_registration_form", 'method -> "POST"){
+@helper.form(action = routes.CodigoQRController.guardarNuevo(), 'id -> "user_registration_form", 'method -> "POST"){
   <fieldset>
     @helper.inputText(
       form("codigo"),
@@ -12,9 +12,8 @@
       '_label -> "Capacidad total",
       '_showConstraints -> false
     )
-
   </fieldset>
-  <button type="submit">Registrarse</button>
+  <button type="submit">Registrar</button>
 
 
 }
