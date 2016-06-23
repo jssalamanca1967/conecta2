@@ -1,0 +1,21 @@
+@(form: DynamicForm, usuario: Usuario)
+
+@main("Conecta2 Network"){
+
+  @helper.form(action = routes.UsuarioController.guardarCodigo(usuario.id), 'id -> "user_registration_form", 'method -> "POST") {
+    <fieldset>
+      @helper.inputText(
+        form("codigo"),
+        '_label -> "Código",
+        '_showConstraints -> false
+      )
+    </fieldset>
+    <button type="submit">Redimir</button>
+    <a href=@routes.UsuarioController.mostrar(id)>
+      <input type="button" value="Cancelar" />
+    </a>
+
+
+  }
+
+}

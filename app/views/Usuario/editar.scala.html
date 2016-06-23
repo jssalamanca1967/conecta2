@@ -1,0 +1,40 @@
+@(form: Form[Usuario], id: Long)
+@main("Conecta2 Network") {
+  @helper.form(action = routes.UsuarioController.guardarEditado(), 'id -> "user_edir_", 'method -> "POST") {
+    <fieldset>
+      @helper.inputText(
+        form("nombre"),
+        '_label -> "Nombre completo",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("contrasenia"),
+        '_label -> "Contraseña",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("confirm_password"),
+        '_label -> "Confirmar contraseña",
+        '_showConstraints -> false
+      )
+      @helper.inputDate(
+        form("cumpleanios"),
+        '_label -> "Fecha de nacimiento",
+        '_showConstraints -> false
+      )
+      @helper.select(
+        field = form("selectField"),
+        options = Seq("Femenino" -> "Femenino", "Masculino" -> "Masculino"),
+        '_label -> "Sexo",
+        '_showConstraints -> false
+      )
+    </fieldset>
+    <button type="submit">Guardar</button>
+    <button type="reset">Restauar valores</button>
+    <a href=@routes.UsuarioController.mostrar(id)>
+      <input type="button" value="Cancelar" />
+    </a>
+
+
+  }
+}
