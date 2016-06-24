@@ -1,0 +1,19 @@
+@(personals: List[Cliente])
+
+@main("Conecta2") {
+
+  @for(personal <- personals) {
+    @if(personal != null) {
+      <p><b>Nombre Usuario: </b>@personal.nombre</p>
+      <a href=@routes.PersonalController.editar(personal.id)>
+        <input type="button" value="Editar" />
+      </a>
+
+    } else {
+      <p>El usuario de personal que está buscando no existe</p>
+    }
+  }
+
+
+
+}

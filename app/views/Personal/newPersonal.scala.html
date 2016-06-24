@@ -1,0 +1,27 @@
+@(form: Form[Personal])
+
+@main("Conecta2") {
+  @helper.form(action = routes.PersonalController.guardarNuevo(), 'id -> "client_registration_form", 'method -> "POST") {
+    <fieldset>
+      @helper.inputText(
+        form("nombreUsuario"),
+        '_label -> "Nombre de la empresa",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("contrasenia"),
+        '_label -> "Contraseña",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("confirm_password"),
+        '_label -> "Confirmar contraseña",
+        '_showConstraints -> false
+      )
+    </fieldset>
+    <button type="submit">Registrarse</button>
+
+  }
+}
+
+

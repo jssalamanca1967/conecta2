@@ -30,7 +30,7 @@ public class CodigoQRController extends Controller {
 
         }
         else{
-            return ok(index.render("Your new application is ready."));
+            return ok(index.render());
         }
     }
 
@@ -49,7 +49,7 @@ public class CodigoQRController extends Controller {
     }
 
     public Result editar(long id) {
-        return ok(index.render("Your new application is ready."));
+        return ok(index.render());
     }
 
     public Result crear(){
