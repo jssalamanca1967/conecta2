@@ -1,7 +1,6 @@
 @(form: DynamicForm, usuario: Usuario)
 
 @main("Conecta2 Network"){
-
   @helper.form(action = routes.UsuarioController.guardarCodigo(usuario.id), 'id -> "user_registration_form", 'method -> "POST") {
     <fieldset>
       @helper.inputText(
@@ -14,6 +13,7 @@
     <a href=@routes.UsuarioController.mostrar(usuario.id)>
       <input type="button" value="Cancelar" />
     </a>
+
 
 
   }

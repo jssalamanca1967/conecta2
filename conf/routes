@@ -36,12 +36,15 @@ GET     /codigo/*id                controllers.CodigoQRController.mostrar(id: Lo
 
 # Cliente
 
-GET     /cliente/nuevo              controllers.ClienteController.crear()
-POST    /cliente/guardar            controllers.ClienteController.guardarNuevo()
-GET     /clientes                   controllers.ClienteController.clientes()
-POST    /cliente/*id/guardarEditado controllers.ClienteController.guardarEditado(id: Long)
-GET     /cliente/*id/editar         controllers.ClienteController.editar(id: Long)
-GET     /cliente/*id                controllers.ClienteController.mostrar(id: Long)
+GET     /cliente/nuevo                      controllers.ClienteController.crear()
+POST    /cliente/guardar                    controllers.ClienteController.guardarNuevo()
+GET     /clientes                           controllers.ClienteController.clientes()
+GET     /cliente/*id/agregarCodigo          controllers.ClienteController.agregarCodigo(id: Long)
+POST    /cliente/*id/guardarEditado         controllers.ClienteController.guardarEditado(id: Long)
+GET    /cliente/*id/guardarCodigo/*idCod   controllers.ClienteController.guardarCodigo(id: Long, idCod: Long)
+GET     /cliente/*id/editar                 controllers.ClienteController.editar(id: Long)
+GET     /cliente/*id                        controllers.ClienteController.mostrar(id: Long)
+
 
 # Personal
 

@@ -1,6 +1,7 @@
 @(form: Form[Usuario])
 
 @main("Conecta2") {
+
     @helper.form(action = routes.UsuarioController.guardarNuevo(), 'id -> "user_registration_form", 'method -> "POST") {
         <fieldset>
             @helper.inputText(
@@ -41,9 +42,10 @@
             )
         </fieldset>
         <button type="submit">Registrarse</button>
-
-
     }
+
+
 }
+
 
 

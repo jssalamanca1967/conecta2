@@ -2,23 +2,27 @@
 
 @main("Conecta2") {
 
-  @for(cliente <- clientes) {
-    @if(cliente != null) {
-      <p><b>Nombre: </b>@cliente.nombre</p>
-      <p><b>NIT: </b>@cliente.nit</p>
-      <a href=@routes.ClienteController.editar(cliente.id)>
-        <input type="button" value="Editar" />
-      </a>
+  <table class="table table-striped table-responsive">
+    <thead>
+      <tr>
+        <th><h3>Nombre Empresa</h3></th>
+        <th><h3>NIT</h3></th>
+        <th><h3>Acciones</h3></th>
+      </tr>
+    </thead>
 
-      <p><b>Códigos</b></p>
-      @for(codigo <- cliente.codigos) {
-        <p>@codigo.codigo - @codigo.capacidadTotal MB - @codigo.consumido MB - @codigo.cliente.nombre </p>
-      }
+    @for(cliente <- clientes){
 
-    } else {
-      <p>El cliente que está buscando no existe</p>
+      <tr>
+        <th scope=row><h4>@cliente.nombre</h4></th>
+        <td><h4>@cliente.nit</h4></td>
+        <td><h4><a href=@routes.ClienteController.mostrar(cliente.id)>Ver más</h4></td>
+      </tr>
+
     }
-  }
+  </table>
+
+
 
 
 

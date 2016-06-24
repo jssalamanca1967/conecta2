@@ -9,11 +9,29 @@
         <a href=@routes.UsuarioController.editar(usuario.id)>
             <input type="button" value="Editar" />
         </a>
+        <a href=@routes.UsuarioController.redimirCodigo(usuario.id)>
+            <input type="button" value="Redimir nuevo código" />
+        </a>
 
-        <p><b>Códigos</b></p>
-        @for(codigo <- usuario.codigos){
-            <p>@codigo.codigo - @codigo.capacidadTotal MB - @codigo.consumido MB - @codigo.cliente.nombre </p>
-        }
+
+        <table class="table table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th><h2>Código</h2></th>
+                    <th><h2>Capacidad (MB)</h2></th>
+                    <th><h2>Consumido (MB)</h2></th>
+                    <th><h2>Empresa</h2></th>
+                </tr>
+            </thead>
+            @for(codigo <- usuario.codigos){
+                <tr>
+                    <th scope=row><h4>@codigo.codigo</h4></th>
+                    <td><h4>@codigo.capacidadTotal</h4></td>
+                    <td><h4>@codigo.consumido</h4></td>
+                    <td><h4>@codigo.cliente.nombre</h4></td>
+                </tr>
+            }
+        </table>
 
     }else{
         <p>El usuario que está buscando no existe</p>

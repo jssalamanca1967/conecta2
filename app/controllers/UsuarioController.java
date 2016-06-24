@@ -156,6 +156,8 @@ public class UsuarioController extends Controller {
             if (code != null) {
                 user.codigos.add(code);
                 user.save();
+                code.usuario = user;
+                code.save();
                 return redirect(routes.UsuarioController.mostrar(id));
             } else {
                 form.reject("codigo", "El código que intenta redimir no existe");

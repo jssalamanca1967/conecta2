@@ -1,7 +1,9 @@
 package controllers;
 
 import models.Cliente;
+import models.CodigoQR;
 import models.Usuario;
+import play.data.DynamicForm;
 import play.data.Form;
 import play.mvc.*;
 
@@ -120,5 +122,37 @@ public class ClienteController extends Controller {
     public Result clientes() {
         List<Cliente> cliente = Cliente.find.all();
         return ok(views.html.Cliente.index.render(cliente));
+    }
+
+    public Result agregarCodigo(Long id){
+
+        DynamicForm form = Form.form();
+
+        Cliente cliente = Cliente.find.byId(id);
+        List<CodigoQR> codigos = CodigoQR.find.where().isNull("cliente_id").findList();
+
+        return ok(views.html.Cliente.agregarCodigo.render(codigos, cliente));
+
+    }
+
+    public Result guardarCodigo(long idCliente, Long idCodigo) {
+
+
+
+            CodigoQR code = CodigoQR.find.byId(idCodigo);
+            Cliente cliente = Cliente.find.byId(idCliente);
+
+
+            if (code != null) {
+                cliente.codigos.add(code);
+                cliente.save();
+                code.cliente = cliente;
+                code.save();
+                return redirect(routes.ClienteController.mostrar(idCliente));
+            } else {
+                List<CodigoQR> codigos = CodigoQR.find.all();
+                return badRequest(views.html.Cliente.agregarCodigo.render(codigos, cliente));
+            }
+
     }
 }

@@ -2,19 +2,23 @@
 
 @main("Conecta2") {
 
-    @for(codigo <- codigos) {
-        <p><b>Codigo: </b>@codigo.codigo</p>
-        <p><b>Capacidad: </b>@codigo.capacidadTotal</p>
-        <p><b>Consumido: </b>@codigo.consumido</p>
-        <p><b>Cliente a quien pertenece: </b>@if(codigo.cliente != null){
-            @codigo.cliente.nombre
-        }else{
-            Ninguno
-        }</p>
-        <p><b>Usuario a quien pertenece: </b>@if(codigo.usuario != null){
-            @codigo.usuario.email
-        }else{
-            Ninguno
-        }</p>
-    }
+    <h1><b>Códigos</b></h1>
+    <table class="table table-striped table-responsive">
+        <thead>
+            <tr>
+                <th><h2>Código</h2></th>
+                <th><h2>Capacidad (MB)</h2></th>
+                <th><h2>Consumido (MB)</h2></th>
+                <th><h2>Empresa</h2></th>
+            </tr>
+        </thead>
+        @for(codigo <- codigos){
+            <tr>
+                <th scope=row><h4>@codigo.codigo</h4></th>
+                <td><h4>@codigo.capacidadTotal</h4></td>
+                <td><h4>@codigo.consumido</h4></td>
+                <td><h4>@if(codigo.cliente != null){codigo.cliente.nombre}else{Ninguno}</h4></td>
+            </tr>
+        }
+    </table>
 }

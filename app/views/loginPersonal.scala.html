@@ -1,6 +1,7 @@
 @(form: DynamicForm)
 
 @main("Conecta2"){
+  <form class="form-actions">
   @helper.form(action = routes.Application.loginSubmitPersonal(), 'id -> "user_registration_form", 'method -> "POST"){
     <fieldset>
       @helper.inputText(
@@ -15,5 +16,7 @@
       )
     </fieldset>
     <button type="submit">Registrarse</button>
+
   }
+  </form>
 }
