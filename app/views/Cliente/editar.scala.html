@@ -1,0 +1,29 @@
+@(form: Form[Cliente], id: Long)
+
+@main("Conecta2") {
+  @helper.form(action = routes.ClienteController.guardarEditado(id), 'id -> "client_registration_form", 'method -> "POST") {
+    <fieldset>
+      @helper.inputText(
+        form("nombre"),
+        '_label -> "Nombre de la empresa",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("contrasenia"),
+        '_label -> "Contraseña",
+        '_showConstraints -> false
+      )
+      @helper.inputPassword(
+        form("confirm_password"),
+        '_label -> "Confirmar contraseña",
+        '_showConstraints -> false
+      )
+    </fieldset>
+      <button type="reset">Restauar valores</button>
+      <a href=@routes.ClienteController.mostrar(id)>
+          <input type="button" value="Cancelar" />
+      </a>
+  }
+}
+
+

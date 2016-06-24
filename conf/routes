@@ -36,8 +36,6 @@ GET     /cliente/nuevo              controllers.ClienteController.crear()
 POST    /cliente/guardar            controllers.ClienteController.guardarNuevo()
 GET     /clientes                   controllers.ClienteController.clientes()
 POST    /cliente/*id/guardarEditado controllers.ClienteController.guardarEditado(id: Long)
-POST    /cliente/*id/guardarCodigo  controllers.ClienteController.guardarCodigo(id: Long)
-GET     /cliente/*id/agregarCodigo  controllers.ClienteController.redimirCodigo(id: Long)
 GET     /cliente/*id/editar         controllers.ClienteController.editar(id: Long)
 GET     /cliente/*id                controllers.ClienteController.mostrar(id: Long)
 

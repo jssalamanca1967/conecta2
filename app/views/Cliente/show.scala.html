@@ -1,0 +1,23 @@
+@(cliente: Cliente)
+
+@main("Conecta2") {
+
+  @if(cliente != null) {
+    <p><b>Nombre: </b>@cliente.nombre</p>
+    <p><b>NIT: </b>@cliente.nit</p>
+    <a href=@routes.ClienteController.editar(cliente.id)>
+      <input type="button" value="Editar" />
+    </a>
+
+    <p><b>Códigos</b></p>
+    @for(codigo <- cliente.codigos){
+      <p>@codigo.codigo - @codigo.capacidadTotal MB - @codigo.consumido MB - @codigo.cliente.nombre </p>
+    }
+
+  }else{
+    <p>El cliente que está buscando no existe</p>
+  }
+
+
+
+}

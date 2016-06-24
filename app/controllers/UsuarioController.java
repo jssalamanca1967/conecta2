@@ -76,7 +76,7 @@ public class UsuarioController extends Controller {
                 Usuario usuario = formulario.get();
                 usuario.save();
 
-                return ok(views.html.index.render("Todo listo"));
+                return ok(views.html.index.render());
             }
         }
         else{

@@ -1,6 +1,11 @@
 package controllers;
 
+import models.Cliente;
+import models.Usuario;
+import play.data.Form;
 import play.mvc.*;
+
+import java.util.List;
 
 /**
  * Created by John on 17/06/2016.
@@ -8,34 +13,112 @@ import play.mvc.*;
 public class ClienteController extends Controller {
 
     public Result crear() {
-        return Results.TODO;
+        Form<Cliente> formulario = Form.form(Cliente.class);
+        return ok(views.html.Cliente.newCliente.render(formulario));
     }
 
-    public Result guardarNuevo() {
-        return Results.TODO;
+    public Result guardarNuevo(){
+        Form<Cliente> formulario = Form.form(Cliente.class).bindFromRequest();
+
+        if(request().method().equals("POST")){
+            if(!formulario.field("contrasenia").value().isEmpty()){
+                if(!formulario.field("confirm_password").value().equals(formulario.field("contrasenia").value())){
+                    formulario.reject("confirm_password", "Las contraseñas no coinciden");
+                }
+            }
+
+            if(!formulario.field("nit").value().isEmpty()){
+
+                List<Cliente> lista = Cliente.find.where().eq("nit", formulario.field("nit").value()).findList();
+
+                if(lista.size() > 0){
+                    formulario.reject("nit", "Ya existe un usuario con ese NIT registrado");
+                }
+            }
+
+            if(formulario.hasErrors()){
+
+                return badRequest(views.html.Cliente.newCliente.render(formulario));
+            }
+            else{
+                Cliente cliente = formulario.get();
+                cliente.save();
+
+                return ok(views.html.index.render());
+            }
+        }
+        else{
+            return ok(views.html.index.render());
+        }
     }
 
-    public Result guardarEditado(long id) {
-        return Results.TODO;
-    }
+    public Result guardarEditado(Long id) {
 
-    public Result guardarCodigo(long id) {
-        return Results.TODO;
-    }
+        Form<Cliente> formulario = Form.form(Cliente.class).bindFromRequest();
 
-    public Result redimirCodigo(long id) {
-        return Results.TODO;
+        if(request().method().equals("POST")){
+
+            boolean cambioPassword = false;
+
+            Cliente usuarioActual = Cliente.find.byId(id);
+
+            formulario.discardErrors();
+
+            if(!formulario.field("contrasenia").value().isEmpty()){
+                if(!formulario.field("confirm_password").value().equals(formulario.field("contrasenia").value())){
+                    formulario.reject("confirm_password", "Las contraseñas no coinciden");
+                }
+                else{
+                    cambioPassword = true;
+                }
+            }
+            if(formulario.field("nombre").value().isEmpty()){
+                formulario.reject("nombre", "El nombre no puede ser vacío");
+            }
+
+            if(formulario.hasErrors()){
+                return badRequest(views.html.Cliente.editar.render(formulario, id));
+            }
+            else {
+
+                Cliente cliente = usuarioActual;
+
+                if(cambioPassword){
+                    cliente.contrasenia = formulario.field("contrasenia").value();
+                }
+
+                cliente.nombre = formulario.field("nombre").value();
+
+                cliente.save();
+
+                return redirect(routes.ClienteController.mostrar(id));
+            }
+
+        }
+        else{
+            return redirect(routes.ClienteController.mostrar(id));
+        }
     }
 
     public Result editar(long id) {
-        return Results.TODO;
+
+        Form<Cliente> formulario = Form.form(Cliente.class);
+
+        Cliente cliente = Cliente.find.byId(id);
+
+        formulario.fill(cliente);
+
+        return ok(views.html.Cliente.editar.render(formulario, id));
+
     }
 
     public Result mostrar(long id) {
-        return Results.TODO;
+        Cliente cliente = Cliente.find.byId(id);
+        return ok(views.html.Cliente.show.render(cliente));
     }
 
     public Result clientes() {
-        return Results.TODO;
+        List<Cliente> cliente = Cliente.find.all();
+        return ok(views.html.Cliente.index.render(cliente));
     }
 }
