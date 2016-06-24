@@ -48,7 +48,7 @@ public class Application extends Controller {
         Logger.info("Paso la prueba de contraseña");
         session().clear();
         session("auth", "admin");
-        return ok(index.render("Ha ingresado exitosamente"));
+        return ok(index.render());
     }
 
     public boolean checkPassword(String webPassword, String password){
