@@ -6,7 +6,7 @@ import play.data.Form;
 import play.mvc.*;
 import play.data.*;
 import views.html.*;
-import models.Usuario;
+import models.*;
 import java.util.List;
 import play.libs.Crypto;
 
@@ -59,6 +59,7 @@ public class Application extends Controller {
         Logger.info("Paso la prueba de contraseña");
         session().clear();
         session("auth", "user");
+        session("email", username);
         return ok(index.render());
     }
 

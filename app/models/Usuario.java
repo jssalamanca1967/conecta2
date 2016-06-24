@@ -46,5 +46,15 @@ public class Usuario extends Model{
     public String sexo;
 
     public static Finder<Long, Usuario> find = new Finder<Long,Usuario>(Usuario.class);
-}
 
+    public static Usuario darUsuario(String email){
+        List<Usuario> lista = Usuario.find.all();
+        for (Usuario i : lista){
+            if(i.email.equals(email)){
+                return i;
+            }
+        }
+        return null;
+    }
+
+}

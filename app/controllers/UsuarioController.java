@@ -169,5 +169,4 @@ public class UsuarioController extends Controller {
         }
     }
 
-
 }
