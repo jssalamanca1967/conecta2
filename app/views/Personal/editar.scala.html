@@ -1,4 +1,4 @@
-@(form: Form[Cliente], id: Long)
+@(form: Form[Personal], id: Long)
 
 @main("Conecta2") {
   @helper.form(action = routes.PersonalController.guardarEditado(id), 'id -> "client_registration_form", 'method -> "POST") {

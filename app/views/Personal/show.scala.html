@@ -3,7 +3,7 @@
 @main("Conecta2") {
 
   @if(personal != null) {
-    <p><b>Nombre Usuario: </b>@personal.nombre</p>
+    <p><b>Nombre Usuario: </b>@personal.nombreUsuario</p>
     <a href=@routes.PersonalController.editar(personal.id)>
       <input type="button" value="Editar" />
     </a>
