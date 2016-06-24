@@ -1,19 +1,21 @@
 @(form: Form[CodigoQR])
 
-@helper.form(action = routes.CodigoQRController.guardarNuevo(), 'id -> "user_registration_form", 'method -> "POST"){
-  <fieldset>
-    @helper.inputText(
-      form("codigo"),
-      '_label -> "Código",
-      '_showConstraints -> false
-    )
-    @helper.inputText(
-      form("capacidadTotal"),
-      '_label -> "Capacidad total",
-      '_showConstraints -> false
-    )
-  </fieldset>
-  <button type="submit">Registrar</button>
+@main("Conecta2") {
+  @helper.form(action = routes.CodigoQRController.guardarNuevo(), 'id -> "user_registration_form", 'method -> "POST") {
+    <fieldset>
+      @helper.inputText(
+        form("codigo"),
+        '_label -> "Código",
+        '_showConstraints -> false
+      )
+      @helper.inputText(
+        form("capacidadTotal"),
+        '_label -> "Capacidad total",
+        '_showConstraints -> false
+      )
+    </fieldset>
+    <button type="submit">Registrar</button>
 
 
+  }
 }

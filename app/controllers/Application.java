@@ -16,10 +16,22 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
-    public Result login(){
+    public Result loginUsario(){
 
         DynamicForm form = Form.form();
         return ok(login.render(form));
+    }
+
+    public Result loginCliente(){
+
+        DynamicForm form = Form.form();
+        return ok(loginCliente.render(form));
+    }
+
+    public Result loginPersonal(){
+
+        DynamicForm form = Form.form();
+        return ok(loginPersonal.render(form));
     }
 
     public Result loginSubmit(){
@@ -49,6 +61,17 @@ public class Application extends Controller {
         session().clear();
         session("auth", "admin");
         return ok(index.render());
+    }
+
+    public Result loginSubmitCliente(){
+        return ok(index.render());
+
+    }
+
+
+    public Result loginSubmitPersonal(){
+        return ok(index.render());
+
     }
 
     public boolean checkPassword(String webPassword, String password){
