@@ -29,9 +29,6 @@ public class Application extends Controller {
         String password = form.get("password");
         Logger.info("Capto el mensaje "+ username +  " "+password);
         List<Usuario> lista = Usuario.find.all();
-        for (Usuario u : lista) {
-            Logger.info(u.email);
-        }
         Usuario user = null;
         boolean encontro = false;
         for (Usuario i: lista){
@@ -50,8 +47,8 @@ public class Application extends Controller {
         }
         Logger.info("Paso la prueba de contraseña");
         session().clear();
-        session("username", username);
-        return ok(login.render(form));
+        session("auth", "admin");
+        return ok(index.render("Ha ingresado exitosamente"));
     }
 
     public boolean checkPassword(String webPassword, String password){

@@ -8,6 +8,7 @@ create table cliente (
   nit                       varchar(255),
   nombre                    varchar(255),
   contrasenia               varchar(255),
+  constraint uq_cliente_nit unique (nit),
   constraint pk_cliente primary key (id))
 ;
 
