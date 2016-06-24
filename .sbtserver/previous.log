@@ -1,6 +1,6 @@
-New log file opened at Thu Jun 23 16:41:56 COT 2016 by 6964@Portatil-Juan
-jvm 6964@Portatil-Juan
-jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b15
+New log file opened at Thu Jun 23 23:25:03 COT 2016 by 1100@Equipo-Juan
+jvm 1100@Equipo-Juan
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b14
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\JuanJose\conecta2\project, returning: (conecta2-build)
 Loading project definition from C:\Users\JuanJose\conecta2\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@46cd0f68, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2d2e1376, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,152 +67,42 @@ Set current project to conecta2 (in build file:/C:/Users/JuanJose/conecta2/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6a22f6bd, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala)
-	modified: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
-
-Recompiling all 25 sources: invalidated sources (20) exceeded 50.0% of all sources
-Read from stdout: Compiling 15 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
-Compiling 15 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 12fa6064, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\JuanJose\conecta2\target\scala-2.11\classes;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-enhancer\jars\play-enhancer-1.1.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\JuanJose\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\JuanJose\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\JuanJose\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\JuanJose\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\JuanJose\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\JuanJose\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\JuanJose\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\JuanJose\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\JuanJose\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\JuanJose\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\JuanJose\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\JuanJose\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\JuanJose\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.3.0.jar;C:\Users\JuanJose\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.15.jar;C:\Users\JuanJose\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\JuanJose\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\JuanJose\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.1.Final.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.9.jar;C:\Users\JuanJose\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\JuanJose\.ivy2\cache\net.jodah\typetools\bundles\typetools-0.4.3.jar;C:\Users\JuanJose\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.21.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\JuanJose\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\JuanJose\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\JuanJose\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\JuanJose\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\JuanJose\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\JuanJose\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.18.jar
-Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getDate in class Date is deprecated: see corresponding Javadoc for more information.
-C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getDate in class Date is deprecated: see corresponding Javadoc for more information.
-Read from stdout: <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-        <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-Read from stdout: ^
-                                                                   ^
-Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getMonth in class Date is deprecated: see corresponding Javadoc for more information.
-C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getMonth in class Date is deprecated: see corresponding Javadoc for more information.
-Read from stdout: <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-        <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-Read from stdout: ^
-                                                                                                ^
-Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getYear in class Date is deprecated: see corresponding Javadoc for more information.
-C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getYear in class Date is deprecated: see corresponding Javadoc for more information.
-Read from stdout: <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-        <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-Read from stdout: ^
-                                                                                                                               ^
-Read from stdout: three warnings found
-three warnings found
-Scala compilation took 15.08498846 s
-Attempting to call com.sun.tools.javac.api.JavacTool@3f6fbd56 directly...
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-Read from stdout: symbol:   class Login
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-  symbol:   class Login
-  location: class controllers.Application
-Read from stdout: Login
-Login
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-Read from stdout: symbol:   class Login
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-  symbol:   class Login
-  location: class controllers.Application
-Read from stdout: Login
-Login
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable email
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable email
-  location: class controllers.Application
-Read from stdout: email
-email
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable password
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable password
-  location: class controllers.Application
-Read from stdout: password
-password
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable User
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable User
-  location: class controllers.Application
-Read from stdout: User
-User
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java uses unchecked or unsafe operations.
-C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: Recompile with -Xlint:unchecked for details.
-C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 19 s, completed 23/06/2016 04:42:21 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
 > {file:/C:/Users/JuanJose/conecta2/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3afd1287, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@236fff0d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set(C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala)
-	modified: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
+	added: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\editar.template.scala, C:\Users\JuanJose\conecta2\app\models\Personal.java, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\models\Cliente.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\loginCliente.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\show.template.scala, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\loginPersonal.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\app\controllers\ClienteController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\editar.template.scala, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\index.template.scala, C:\Users\JuanJose\conecta2\app\models\Usuario.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\newPersonal.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\newCliente.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
+Initial directly invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\editar.template.scala, C:\Users\JuanJose\conecta2\app\models\Personal.java, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\models\Cliente.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\loginCliente.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\show.template.scala, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\loginPersonal.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\app\controllers\ClienteController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\editar.template.scala, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\index.template.scala, C:\Users\JuanJose\conecta2\app\models\Usuario.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\newPersonal.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\newCliente.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
+All initially invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\editar.template.scala, C:\Users\JuanJose\conecta2\app\models\Personal.java, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\models\Cliente.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\loginCliente.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\show.template.scala, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\loginPersonal.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\app\controllers\ClienteController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\editar.template.scala, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\index.template.scala, C:\Users\JuanJose\conecta2\app\models\Usuario.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Personal\newPersonal.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Cliente\newCliente.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
 
-Recompiling all 25 sources: invalidated sources (20) exceeded 50.0% of all sources
-Read from stdout: Compiling 15 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
-Compiling 15 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
+Recompiling all 35 sources: invalidated sources (35) exceeded 50.0% of all sources
+Read from stdout: Compiling 25 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
+Compiling 25 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
 Getting compiler-interface from component compiler for Scala 2.11.6
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.6
 Other repositories:
 Default repositories:
-Running cached compiler 30c09f6b, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Running cached compiler 16a689fa, interfacing (CompilerInterface) with Scala compiler version 2.11.6
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
 	-encoding
 	utf8
 	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	C:\Program Files\Java\jre1.8.0_91\lib\resources.jar;C:\Program Files\Java\jre1.8.0_91\lib\rt.jar;C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_91\lib\jce.jar;C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_91\classes;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
 	-classpath
 	C:\Users\JuanJose\conecta2\target\scala-2.11\classes;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-enhancer\jars\play-enhancer-1.1.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\JuanJose\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\JuanJose\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\JuanJose\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\JuanJose\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\JuanJose\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\JuanJose\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\JuanJose\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\JuanJose\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\JuanJose\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\JuanJose\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\JuanJose\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\JuanJose\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\JuanJose\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.3.0.jar;C:\Users\JuanJose\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.15.jar;C:\Users\JuanJose\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\JuanJose\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\JuanJose\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.1.Final.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.9.jar;C:\Users\JuanJose\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\JuanJose\.ivy2\cache\net.jodah\typetools\bundles\typetools-0.4.3.jar;C:\Users\JuanJose\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.21.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\JuanJose\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\JuanJose\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\JuanJose\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\JuanJose\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\JuanJose\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\JuanJose\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.18.jar
 Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getDate in class Date is deprecated: see corresponding Javadoc for more information.
@@ -235,178 +125,145 @@ Read from stdout: ^
                                                                                                                                ^
 Read from stdout: three warnings found
 three warnings found
-Scala compilation took 5.964403395 s
-Attempting to call com.sun.tools.javac.api.JavacTool@6312d20c directly...
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-Read from stdout: symbol:   class Login
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-  symbol:   class Login
-  location: class controllers.Application
-Read from stdout: Login
-Login
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-Read from stdout: symbol:   class Login
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-  symbol:   class Login
-  location: class controllers.Application
-Read from stdout: Login
-Login
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable email
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable email
-  location: class controllers.Application
-Read from stdout: email
-email
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable password
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable password
-  location: class controllers.Application
-Read from stdout: password
-password
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable User
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable User
-  location: class controllers.Application
-Read from stdout: User
-User
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java uses unchecked or unsafe operations.
-C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: Recompile with -Xlint:unchecked for details.
-C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 8 s, completed 23/06/2016 04:42:29 PM
+Scala compilation took 71.756971549 s
+Cannot run program "javac" (in directory "C:\Users\JuanJose\conecta2"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+java.io.IOException: Cannot run program "javac" (in directory "C:\Users\JuanJose\conecta2"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at sbt.SimpleProcessBuilder.run(ProcessImpl.scala:349)
+	at sbt.AbstractProcessBuilder.run(ProcessImpl.scala:128)
+	at sbt.AbstractProcessBuilder$$anonfun$runBuffered$1.apply(ProcessImpl.scala:159)
+	at sbt.AbstractProcessBuilder$$anonfun$runBuffered$1.apply(ProcessImpl.scala:159)
+	at sbt.compiler.javac.JavacLogger.buffer(JavacProcessLogger.scala:31)
+	at sbt.AbstractProcessBuilder.runBuffered(ProcessImpl.scala:159)
+	at sbt.AbstractProcessBuilder.$bang(ProcessImpl.scala:156)
+	at sbt.compiler.javac.ForkedJava$$anonfun$launch$1.apply(ForkedJava.scala:24)
+	at sbt.compiler.javac.ForkedJava$$anonfun$launch$1.apply(ForkedJava.scala:17)
+	at sbt.compiler.javac.ForkedJava$$anonfun$withArgumentFile$1.apply(ForkedJava.scala:47)
+	at sbt.compiler.javac.ForkedJava$$anonfun$withArgumentFile$1.apply(ForkedJava.scala:44)
+	at sbt.IO$.withTemporaryDirectory(IO.scala:291)
+	at sbt.compiler.javac.ForkedJava$.withArgumentFile(ForkedJava.scala:44)
+	at sbt.compiler.javac.ForkedJava$.launch(ForkedJava.scala:17)
+	at sbt.compiler.javac.ForkedJavaCompiler.run(ForkedJava.scala:68)
+	at sbt.compiler.javac.JavaCompilerAdapter.compileWithReporter(JavaCompilerAdapter.scala:31)
+	at sbt.compiler.javac.AnalyzingJavaCompiler$$anonfun$compile$1.apply$mcV$sp(AnalyzingJavaCompiler.scala:65)
+	at sbt.compiler.javac.AnalyzingJavaCompiler$$anonfun$compile$1.apply(AnalyzingJavaCompiler.scala:65)
+	at sbt.compiler.javac.AnalyzingJavaCompiler$$anonfun$compile$1.apply(AnalyzingJavaCompiler.scala:65)
+	at sbt.compiler.javac.AnalyzingJavaCompiler.timed(AnalyzingJavaCompiler.scala:93)
+	at sbt.compiler.javac.AnalyzingJavaCompiler.compile(AnalyzingJavaCompiler.scala:64)
+	at sbt.compiler.MixedAnalyzingCompiler$$anonfun$compileJava$1$1.apply$mcV$sp(MixedAnalyzingCompiler.scala:61)
+	at sbt.compiler.MixedAnalyzingCompiler$$anonfun$compileJava$1$1.apply(MixedAnalyzingCompiler.scala:61)
+	at sbt.compiler.MixedAnalyzingCompiler$$anonfun$compileJava$1$1.apply(MixedAnalyzingCompiler.scala:61)
+	at sbt.compiler.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:75)
+	at sbt.compiler.MixedAnalyzingCompiler.compileJava$1(MixedAnalyzingCompiler.scala:60)
+	at sbt.compiler.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:65)
+	at sbt.compiler.IC$$anonfun$compileInternal$1.apply(IncrementalCompiler.scala:160)
+	at sbt.compiler.IC$$anonfun$compileInternal$1.apply(IncrementalCompiler.scala:160)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:66)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:64)
+	at sbt.inc.IncrementalCommon.cycle(IncrementalCommon.scala:31)
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:62)
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:61)
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:89)
+	at sbt.inc.Incremental$.compile(Incremental.scala:61)
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:54)
+	at sbt.compiler.IC$.compileInternal(IncrementalCompiler.scala:160)
+	at sbt.compiler.IC$.incrementalCompile(IncrementalCompiler.scala:138)
+	at sbt.Compiler$.compile(Compiler.scala:128)
+	at sbt.Defaults$.sbt$Defaults$$compileIncrementalTaskImpl(Defaults.scala:813)
+	at sbt.Defaults$$anonfun$compileIncrementalTask$1.apply(Defaults.scala:805)
+	at sbt.Defaults$$anonfun$compileIncrementalTask$1.apply(Defaults.scala:803)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at sbt.SimpleProcessBuilder.run(ProcessImpl.scala:349)
+	at sbt.AbstractProcessBuilder.run(ProcessImpl.scala:128)
+	at sbt.AbstractProcessBuilder$$anonfun$runBuffered$1.apply(ProcessImpl.scala:159)
+	at sbt.AbstractProcessBuilder$$anonfun$runBuffered$1.apply(ProcessImpl.scala:159)
+	at sbt.compiler.javac.JavacLogger.buffer(JavacProcessLogger.scala:31)
+	at sbt.AbstractProcessBuilder.runBuffered(ProcessImpl.scala:159)
+	at sbt.AbstractProcessBuilder.$bang(ProcessImpl.scala:156)
+	at sbt.compiler.javac.ForkedJava$$anonfun$launch$1.apply(ForkedJava.scala:24)
+	at sbt.compiler.javac.ForkedJava$$anonfun$launch$1.apply(ForkedJava.scala:17)
+	at sbt.compiler.javac.ForkedJava$$anonfun$withArgumentFile$1.apply(ForkedJava.scala:47)
+	at sbt.compiler.javac.ForkedJava$$anonfun$withArgumentFile$1.apply(ForkedJava.scala:44)
+	at sbt.IO$.withTemporaryDirectory(IO.scala:291)
+	at sbt.compiler.javac.ForkedJava$.withArgumentFile(ForkedJava.scala:44)
+	at sbt.compiler.javac.ForkedJava$.launch(ForkedJava.scala:17)
+	at sbt.compiler.javac.ForkedJavaCompiler.run(ForkedJava.scala:68)
+	at sbt.compiler.javac.JavaCompilerAdapter.compileWithReporter(JavaCompilerAdapter.scala:31)
+	at sbt.compiler.javac.AnalyzingJavaCompiler$$anonfun$compile$1.apply$mcV$sp(AnalyzingJavaCompiler.scala:65)
+	at sbt.compiler.javac.AnalyzingJavaCompiler$$anonfun$compile$1.apply(AnalyzingJavaCompiler.scala:65)
+	at sbt.compiler.javac.AnalyzingJavaCompiler$$anonfun$compile$1.apply(AnalyzingJavaCompiler.scala:65)
+	at sbt.compiler.javac.AnalyzingJavaCompiler.timed(AnalyzingJavaCompiler.scala:93)
+	at sbt.compiler.javac.AnalyzingJavaCompiler.compile(AnalyzingJavaCompiler.scala:64)
+	at sbt.compiler.MixedAnalyzingCompiler$$anonfun$compileJava$1$1.apply$mcV$sp(MixedAnalyzingCompiler.scala:61)
+	at sbt.compiler.MixedAnalyzingCompiler$$anonfun$compileJava$1$1.apply(MixedAnalyzingCompiler.scala:61)
+	at sbt.compiler.MixedAnalyzingCompiler$$anonfun$compileJava$1$1.apply(MixedAnalyzingCompiler.scala:61)
+	at sbt.compiler.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:75)
+	at sbt.compiler.MixedAnalyzingCompiler.compileJava$1(MixedAnalyzingCompiler.scala:60)
+	at sbt.compiler.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:65)
+	at sbt.compiler.IC$$anonfun$compileInternal$1.apply(IncrementalCompiler.scala:160)
+	at sbt.compiler.IC$$anonfun$compileInternal$1.apply(IncrementalCompiler.scala:160)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:66)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:64)
+	at sbt.inc.IncrementalCommon.cycle(IncrementalCommon.scala:31)
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:62)
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:61)
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:89)
+	at sbt.inc.Incremental$.compile(Incremental.scala:61)
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:54)
+	at sbt.compiler.IC$.compileInternal(IncrementalCompiler.scala:160)
+	at sbt.compiler.IC$.incrementalCompile(IncrementalCompiler.scala:138)
+	at sbt.Compiler$.compile(Compiler.scala:128)
+	at sbt.Defaults$.sbt$Defaults$$compileIncrementalTaskImpl(Defaults.scala:813)
+	at sbt.Defaults$$anonfun$compileIncrementalTask$1.apply(Defaults.scala:805)
+	at sbt.Defaults$$anonfun$compileIncrementalTask$1.apply(Defaults.scala:803)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Read from stdout: (compile:compileIncremental) java.io.IOException: Cannot run program "javac" (in directory "C:\Users\JuanJose\conecta2"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+(compile:compileIncremental) java.io.IOException: Cannot run program "javac" (in directory "C:\Users\JuanJose\conecta2"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+Total time: 75 s, completed 23/06/2016 11:26:39 PM
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/JuanJose/conecta2/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@40f942d6, check cycles: false
-Total time: 0 s, completed 23/06/2016 04:42:29 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/JuanJose/conecta2/}myProject/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@ff6f356, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala)
-	modified: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\controllers\PersonalController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\agregarCodigo.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\JuanJose\conecta2\app\models\CodigoQR.java, C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java, C:\Users\JuanJose\conecta2\app\controllers\Application.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\editar.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\JuanJose\conecta2\app\controllers\CodigoQRController.java, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\index.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\login.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\show.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\CodigoQR\newCodigoQR.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\twirl\main\views\html\Usuario\newUser.template.scala, C:\Users\JuanJose\conecta2\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
-
-Recompiling all 25 sources: invalidated sources (20) exceeded 50.0% of all sources
-Read from stdout: Compiling 15 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
-Compiling 15 Scala sources and 10 Java sources to C:\Users\JuanJose\conecta2\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 515b6591, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\JuanJose\conecta2\target\scala-2.11\classes;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-enhancer\jars\play-enhancer-1.1.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\JuanJose\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\JuanJose\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\JuanJose\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\JuanJose\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\JuanJose\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\JuanJose\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\JuanJose\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\JuanJose\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\JuanJose\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\JuanJose\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\JuanJose\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\JuanJose\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\JuanJose\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.3.0.jar;C:\Users\JuanJose\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.15.jar;C:\Users\JuanJose\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\JuanJose\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\JuanJose\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\JuanJose\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.1.Final.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.1.6.RELEASE.jar;C:\Users\JuanJose\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.9.jar;C:\Users\JuanJose\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\JuanJose\.ivy2\cache\net.jodah\typetools\bundles\typetools-0.4.3.jar;C:\Users\JuanJose\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.21.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\JuanJose\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\JuanJose\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\JuanJose\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\JuanJose\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\JuanJose\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\JuanJose\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\JuanJose\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\JuanJose\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.18.jar
-Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getDate in class Date is deprecated: see corresponding Javadoc for more information.
-C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getDate in class Date is deprecated: see corresponding Javadoc for more information.
-Read from stdout: <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-        <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-Read from stdout: ^
-                                                                   ^
-Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getMonth in class Date is deprecated: see corresponding Javadoc for more information.
-C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getMonth in class Date is deprecated: see corresponding Javadoc for more information.
-Read from stdout: <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-        <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-Read from stdout: ^
-                                                                                                ^
-Read from stdout: C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getYear in class Date is deprecated: see corresponding Javadoc for more information.
-C:\Users\JuanJose\conecta2\app\views\Usuario\show.scala.html:8: method getYear in class Date is deprecated: see corresponding Javadoc for more information.
-Read from stdout: <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-        <p><b>Fecha de nacimiento: </b>@usuario.cumpleanios.getDate/@usuario.cumpleanios.getMonth/@(usuario.cumpleanios.getYear+1900)</p>
-Read from stdout: ^
-                                                                                                                               ^
-Read from stdout: three warnings found
-three warnings found
-Scala compilation took 4.538931234 s
-Attempting to call com.sun.tools.javac.api.JavacTool@17bd8004 directly...
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-Read from stdout: symbol:   class Login
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-  symbol:   class Login
-  location: class controllers.Application
-Read from stdout: Login
-Login
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-Read from stdout: symbol:   class Login
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:33: cannot find symbol
-  symbol:   class Login
-  location: class controllers.Application
-Read from stdout: Login
-Login
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable email
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable email
-  location: class controllers.Application
-Read from stdout: email
-email
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable password
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable password
-  location: class controllers.Application
-Read from stdout: password
-password
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-Read from stdout: symbol:   variable User
-Read from stdout: location: class controllers.Application
-C:\Users\JuanJose\conecta2\app\controllers\Application.java:46: cannot find symbol
-  symbol:   variable User
-  location: class controllers.Application
-Read from stdout: User
-User
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java uses unchecked or unsafe operations.
-C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: Recompile with -Xlint:unchecked for details.
-C:\Users\JuanJose\conecta2\app\controllers\UsuarioController.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 6 s, completed 23/06/2016 04:42:34 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/JuanJose/conecta2/}myProject/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1f9baaed, check cycles: false
-Total time: 0 s, completed 23/06/2016 04:42:35 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@454db34c, check cycles: false
+Total time: 0 s, completed 23/06/2016 11:26:39 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -415,4 +272,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 6964@Portatil-Juan logs at Thu Jun 23 16:50:56 COT 2016, goodbye.
+Closing the 1100@Equipo-Juan logs at Thu Jun 23 23:26:40 COT 2016, goodbye.
